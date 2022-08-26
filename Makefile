@@ -19,7 +19,8 @@ tools/escape-c$(EXE): tools/escape-c.c escape.h
 ifneq ($(PREFIX),)
 install: install-license
 install-license: LICENSE
-	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-escape
-	cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-escape
+	@echo 'I share/doc/c-escape/LICENSE'
+	@mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-escape
+	@cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-escape
 endif
 ## -- license --
