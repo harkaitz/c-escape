@@ -13,6 +13,7 @@ install:
 	@mkdir -p $(DESTDIR)$(PREFIX)/include/str
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp escape.h $(DESTDIR)$(PREFIX)/include/str
+	cp escape2.h $(DESTDIR)$(PREFIX)/include/str
 	cp $(PROGRAMS) $(DESTDIR)$(PREFIX)/bin
 clean:
 	rm -f $(PROGRAMS)
